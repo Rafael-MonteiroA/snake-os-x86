@@ -6,12 +6,12 @@ como o primeiro código que a CPU executa ao ligar o computador.
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
 │ PONTUACAO: 50   NIVEL: 2                                                │
-│ [SNAKE OS] - W/A/S/D ou setas para mover | ESC = sair                  │
-│ ╔══════════════════════════════════════════════════════════════════════╗ │
-│ ║                                                                      ║ │
+│ [SNAKE OS] - W/A/S/D ou setas para mover | ESC = sair                   │
+│ ╔═════════════════════════════════════════════════════════════════════╗ │
+│ ║                                                                     ║ │
 │ ║              ▓▓▓▓▓▓▓☺                                               ║ │
 │ ║                     ♦                                               ║ │
-│ ╚══════════════════════════════════════════════════════════════════════╝ │
+│ ╚═════════════════════════════════════════════════════════════════════╝ │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -131,18 +131,6 @@ os_snake/
 | Aritmética de ponto fixo / sem biblioteca | toda a lógica do jogo |
 | Ring buffer com wrap automático | `snake_x[]`, `head_idx`/`tail_idx` |
 | LCG pseudoaleatório sem FPU | `get_rng` |
-
----
-
-## Próximos passos (expansões sugeridas)
-
-1. **Efeito de ondas na água** — animar a borda com INT 8h a 18.2 Hz
-2. **Placar de recordes persistente** — gravar na CMOS (porta 0x70/0x71)
-3. **Modo gráfico 320×200** — ativar modo 13h (INT 10h AX=0013h), sprites bitmap
-4. **Música via PC Speaker** — porta 0x61 + PIT (canal 2) para beeps melódicos
-5. **Dois jogadores** — segunda cobra com scancodes diferentes
-6. **Obstáculos gerados proceduralmente** — hash determinístico por posição
-7. **Modo protegido 32-bit (DPMI)** — mais velocidade, acesso a >1 MB
 
 ---
 
